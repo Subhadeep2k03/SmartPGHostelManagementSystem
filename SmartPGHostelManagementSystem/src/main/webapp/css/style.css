@@ -1,0 +1,388 @@
+/* ==========================================================
+   Smart PG Hostel Management System — shared stylesheet
+   Loaded on every page via common/header.jsp (or directly on
+   login.jsp / index.jsp). Keep this file the single source of
+   truth for colors, spacing and component styling.
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --primary:#4f46e5;
+    --primary-dark:#3730a3;
+    --primary-light:#818cf8;
+    --accent:#06b6d4;
+    --success:#16a34a;
+    --success-bg:#dcfce7;
+    --danger:#dc2626;
+    --danger-bg:#fee2e2;
+    --warning:#f59e0b;
+    --warning-bg:#fef3c7;
+    --info:#0ea5e9;
+
+    --bg:#f4f5fb;
+    --surface:#ffffff;
+    --text:#1e2233;
+    --text-muted:#6b7280;
+    --border:#e5e7eb;
+
+    --radius-sm:8px;
+    --radius:14px;
+    --radius-lg:20px;
+
+    --shadow-sm:0 1px 3px rgba(17,24,39,0.06);
+    --shadow:0 8px 24px rgba(31,41,55,0.08);
+    --shadow-lg:0 20px 45px rgba(49,46,129,0.16);
+
+    --font:'Inter','Poppins',Arial,sans-serif;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--font);
+    background:
+        radial-gradient(1100px 500px at 100% -10%, rgba(79,70,229,0.10), transparent),
+        radial-gradient(900px 500px at -10% 10%, rgba(6,182,212,0.08), transparent),
+        var(--bg);
+    color:var(--text);
+    margin:0;
+    padding:20px clamp(16px, 4vw, 40px) 48px;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4{
+    font-family:'Poppins','Inter',Arial,sans-serif;
+    color:var(--text);
+    letter-spacing:-0.01em;
+}
+
+h2{
+    font-size:26px;
+    margin:18px 0 20px;
+}
+
+a{
+    color:var(--primary);
+}
+
+p.subtitle, .page-subtitle{
+    color:var(--text-muted);
+    margin-top:-12px;
+}
+
+/* ---------- Top navigation (common/header.jsp) ---------- */
+
+.header{
+    background:linear-gradient(120deg, var(--primary) 0%, var(--primary-dark) 65%, #1e1b4b 100%);
+    box-shadow:var(--shadow-lg);
+}
+
+.nav a{
+    transition:all .18s ease;
+}
+
+.nav a:hover{
+    transform:translateY(-1px);
+    box-shadow:0 6px 14px rgba(0,0,0,0.18);
+}
+
+/* ---------- Generic page toolbar (Back to Dashboard / Add New links) ---------- */
+
+.toolbar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:22px;
+}
+
+.toolbar a, a.btn-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:var(--surface);
+    color:var(--primary-dark);
+    border:1px solid var(--border);
+    padding:9px 16px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    box-shadow:var(--shadow-sm);
+    transition:all .18s ease;
+}
+
+.toolbar a:hover, a.btn-link:hover{
+    background:var(--primary);
+    color:#fff;
+    border-color:var(--primary);
+    transform:translateY(-1px);
+    box-shadow:var(--shadow);
+}
+
+/* ---------- Cards / containers used across pages ---------- */
+
+.card-box{
+    max-width:480px;
+    margin:30px auto;
+    background:var(--surface);
+    padding:30px 32px;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-lg);
+    border:1px solid var(--border);
+}
+
+.panel{
+    background:var(--surface);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+    padding:26px 28px;
+    margin-bottom:24px;
+}
+
+/* ---------- Forms ---------- */
+
+form{
+    background:var(--surface);
+    max-width:560px;
+    margin:0 auto;
+    padding:28px 30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+}
+
+form label{
+    display:block;
+    margin-top:14px;
+    margin-bottom:6px;
+    font-weight:600;
+    font-size:13px;
+    color:var(--text-muted);
+    text-transform:uppercase;
+    letter-spacing:.04em;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:11px 13px;
+    margin:6px 0 4px;
+    border:1.5px solid var(--border);
+    border-radius:var(--radius-sm);
+    font-family:var(--font);
+    font-size:14.5px;
+    background:#fbfbfe;
+    color:var(--text);
+    transition:border-color .15s ease, box-shadow .15s ease;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline:none;
+    border-color:var(--primary-light);
+    box-shadow:0 0 0 4px rgba(79,70,229,0.14);
+    background:#fff;
+}
+
+button, input[type="submit"]{
+    width:100%;
+    padding:12px;
+    margin-top:18px;
+    background:linear-gradient(120deg, var(--primary), var(--primary-dark));
+    color:#fff;
+    border:none;
+    border-radius:var(--radius-sm);
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:.01em;
+    cursor:pointer;
+    box-shadow:0 8px 18px rgba(79,70,229,0.28);
+    transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+button:hover, input[type="submit"]:hover{
+    transform:translateY(-1px);
+    filter:brightness(1.05);
+    box-shadow:0 12px 22px rgba(79,70,229,0.34);
+}
+
+button:active, input[type="submit"]:active{
+    transform:translateY(0);
+}
+
+/* ---------- Tables ---------- */
+
+table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    background:var(--surface);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+    margin:10px 0 30px;
+}
+
+th{
+    background:linear-gradient(120deg, var(--primary), var(--primary-dark));
+    color:#fff;
+    text-align:left;
+    padding:14px 16px;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    font-weight:600;
+    border:none !important;
+}
+
+td{
+    padding:13px 16px;
+    border:none;
+    border-bottom:1px solid var(--border);
+    font-size:14.5px;
+    color:var(--text);
+}
+
+tbody tr:last-child td{
+    border-bottom:none;
+}
+
+tbody tr:hover{
+    background:#f5f6ff;
+}
+
+tbody tr:nth-child(even){
+    background:#fafafe;
+}
+
+tbody tr:nth-child(even):hover{
+    background:#f5f6ff;
+}
+
+td a{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    text-decoration:none;
+    background:#eef0ff;
+    color:var(--primary-dark);
+    transition:all .15s ease;
+}
+
+td a:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+td a[href*="delete"], td a[href*="Delete"]{
+    background:var(--danger-bg);
+    color:var(--danger);
+}
+
+td a[href*="delete"]:hover, td a[href*="Delete"]:hover{
+    background:var(--danger);
+    color:#fff;
+}
+
+/* ---------- Status badges (rendered as plain text today; harmless if unused) ---------- */
+
+.badge{
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12.5px;
+    font-weight:700;
+}
+
+.badge-success{ background:var(--success-bg); color:var(--success); }
+.badge-danger{ background:var(--danger-bg); color:var(--danger); }
+.badge-warning{ background:var(--warning-bg); color:#92610a; }
+
+/* ---------- Alerts / flash messages ---------- */
+
+.alert{
+    padding:13px 16px;
+    margin:15px 0 20px;
+    border-radius:var(--radius-sm);
+    text-align:center;
+    font-weight:600;
+    border:1px solid transparent;
+}
+
+.alert-success{
+    background:var(--success-bg);
+    color:#14532d;
+    border-color:#bbf7d0;
+}
+
+.alert-error{
+    background:var(--danger-bg);
+    color:#7f1d1d;
+    border-color:#fecaca;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer{
+    margin-top:40px;
+    background:linear-gradient(120deg, var(--primary-dark), #1e1b4b);
+    color:#e5e7eb;
+    text-align:center;
+    padding:16px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    font-size:13.5px;
+}
+
+/* ---------- Small helpers ---------- */
+
+.text-muted{ color:var(--text-muted); }
+.empty-state{
+    text-align:center;
+    color:var(--text-muted);
+    background:var(--surface);
+    border:1px dashed var(--border);
+    border-radius:var(--radius);
+    padding:40px;
+    font-size:15px;
+}
+
+@media (max-width:640px){
+    table, thead, tbody, th, td, tr{ display:block; }
+    thead tr{ position:absolute; top:-9999px; left:-9999px; }
+    table{ border:none; box-shadow:none; background:none; }
+    tbody tr{
+        background:var(--surface);
+        margin-bottom:14px;
+        border-radius:var(--radius);
+        box-shadow:var(--shadow);
+        border:1px solid var(--border);
+        padding:6px 0;
+    }
+    td{
+        border:none;
+        padding:8px 16px;
+    }
+    td::before{
+        content:attr(data-label);
+        display:block;
+        font-size:11px;
+        font-weight:700;
+        text-transform:uppercase;
+        color:var(--text-muted);
+        margin-bottom:2px;
+    }
+}
