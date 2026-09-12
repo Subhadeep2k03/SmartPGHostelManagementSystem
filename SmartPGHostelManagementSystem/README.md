@@ -1,44 +1,114 @@
-# Smart PG Hostel Management System
+# Smart PG & Hostel Management System
 
-A Java-based web application for managing PG/Hostel operations digitally.
+A Java-based web application designed to digitally manage PG and Hostel operations.
 
-## Project Overview
+The system is divided into two main modules:
 
-Smart PG Hostel Management System helps administrators manage students, rooms, payments, complaints, notices, and visitors efficiently.
+- Admin Module – For managing hostel operations and student-related activities.
+- Student Module – For students to access their profile and hostel-related information.
 
 ## Features
 
+### Admin Module
+
+The Admin module provides the following features:
+
 - Admin Login
+- Admin Dashboard
 - Student Management
-- Room Management
 - Room Allocation
-- Payment Management
 - Complaint Management
 - Notice Management
-- Visitor Management
-- Dashboard Overview
+
+### Student Module
+
+The Student module provides the following features:
+
+- Student Login
+- Student Dashboard
+- Student Profile
 
 ## Technologies Used
 
-- Java
-- JSP
-- Servlet
-- JDBC
-- MySQL
-- HTML
-- CSS
-- JavaScript
-- Apache Tomcat
-- Eclipse IDE
+- Backend: Java, JSP, Servlets, JDBC
+- Database: MySQL
+- Frontend: HTML5, CSS3, JavaScript
+- Server: Apache Tomcat
+- IDE: Eclipse
+
+## Architecture
+
+The application follows the MVC (Model-View-Controller) architecture and uses the DAO (Data Access Object) pattern for database operations.
+
+## Screenshots
+
+### Admin Module
+
+#### Admin Login
+
+![Admin Login](SmartPGHostelManagementSystem/Admin%20Login1.png)
+
+#### Admin Dashboard
+
+![Admin Dashboard](SmartPGHostelManagementSystem/AdminDashboard.png)
+
+#### Student Management
+
+![Student Management](SmartPGHostelManagementSystem/StudentManagement.png)
+
+#### Room Allocation
+
+![Room Allocation](SmartPGHostelManagementSystem/Roomallocation.png)
+
+#### Complaint Management
+
+![Complaint Management](SmartPGHostelManagementSystem/Complaint%20.png)
+
+#### Notice Management
+
+![Notice Management](SmartPGHostelManagementSystem/Notice%20.png)
+
+### Student Module
+
+#### Student Login
+
+![Student Login](SmartPGHostelManagementSystem/studentlogin.png)
+
+#### Student Dashboard
+
+![Student Dashboard](SmartPGHostelManagementSystem/studentdashboard.png)
+
+#### Student Profile
+
+![Student Profile](SmartPGHostelManagementSystem/studentprofile.png)
 
 ## Database
 
-MySQL database is used for storing:
+The application uses MySQL as the relational database and JDBC for database connectivity.
 
-- Student information
-- Room details
-- Payment records
-- Complaints
-- Visitor records
+## How to Run
+
+1. Clone this repository.
+2. Import the project into Eclipse.
+3. Configure the MySQL database.
+4. Update the database connection details in the project.
+5. Configure Apache Tomcat.
+6. Run the project on the Tomcat server.
+7. Open the application in a web browser.
 
 ## Project Structure
+
+The project consists of:
+
+- Admin Module
+- Student Module
+- JSP Pages
+- Java Servlets
+- DAO Layer
+- MySQL Database
+
+## Author
+
+**Subhadeep Goswami**
+
+GitHub: [Subhadeep2k03](https://github.com/Subhadeep2k03)
