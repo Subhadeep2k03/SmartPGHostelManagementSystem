@@ -46,43 +46,41 @@ The application follows the MVC (Model-View-Controller) architecture and uses th
 
 #### Admin Login
 
-![Admin Login](Screenshots/Admin%20Login1.png)
+![Admin Login](SmartPGHostelManagementSystem/Screenshots/Admin%20Login1.png)
 
 #### Admin Dashboard
 
-![Admin Dashboard](Screenshots/AdminDashboard.png)
+![Admin Dashboard](SmartPGHostelManagementSystem/Screenshots/AdminDashboard.png)
 
 #### Student Management
 
-![Student Management](Screenshots/StudentManagement.png)
+![Student Management](SmartPGHostelManagementSystem/Screenshots/StudentManagement.png)
 
 #### Room Allocation
 
-![Room Allocation](Screenshots/Roomallocation.png)
+![Room Allocation](SmartPGHostelManagementSystem/Screenshots/Roomallocation.png)
 
 #### Complaint Management
 
-![Complaint Management](Screenshots/Complaint.png)
+![Complaint Management](SmartPGHostelManagementSystem/Screenshots/Complaint.png)
 
 #### Notice Management
 
-![Notice Management](Screenshots/Notice.png)
+![Notice Management](SmartPGHostelManagementSystem/Screenshots/Notice.png)
 
 ### Student Module
 
 #### Student Login
 
-![Student Login](Screenshots/studentlogin.png)
+![Student Login](SmartPGHostelManagementSystem/Screenshots/studentlogin.png)
 
 #### Student Dashboard
 
-![Student Dashboard](Screenshots/studentdashboard.png)
+![Student Dashboard](SmartPGHostelManagementSystem/Screenshots/studentdashboard.png)
 
 #### Student Profile
 
-![Student Profile](Screenshots/studentprofile.png)
-
-## Database
+![Student Profile](SmartPGHostelManagementSystem/Screenshots/studentprofile.png)## Database
 
 The application uses MySQL as the relational database and JDBC for database connectivity.
 
