@@ -2,10 +2,10 @@
 
 A Java-based web application designed to digitally manage PG and Hostel operations.
 
-The system is divided into two main parts:
+The system is divided into two main modules:
 
-- **Admin Module** – For managing hostel operations and student-related activities.
-- **Student Module** – For students to access their profile and hostel-related information.
+- Admin Module – For managing hostel operations and student-related activities.
+- Student Module – For students to access their profile and hostel-related information.
 
 ## Features
 
@@ -30,52 +30,61 @@ The Student module provides the following features:
 
 ## Technologies Used
 
-- **Backend:** Java, JSP, Servlets, JDBC
-- **Database:** MySQL
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Server:** Apache Tomcat
-- **IDE:** Eclipse
+- Backend: Java, JSP, Servlets, JDBC
+- Database: MySQL
+- Frontend: HTML5, CSS3, JavaScript
+- Server: Apache Tomcat
+- IDE: Eclipse
 
 ## Architecture
 
-The application follows the **MVC (Model-View-Controller)** architecture and uses the **DAO (Data Access Object)** pattern for database operations.
+The application follows the MVC (Model-View-Controller) architecture and uses the DAO (Data Access Object) pattern for database operations.
 
 ## Screenshots
 
 ### Admin Module
 
 #### Admin Login
+
 ![Admin Login](Screenshots/Admin%20Login1.png)
 
 #### Admin Dashboard
+
 ![Admin Dashboard](Screenshots/AdminDashboard.png)
 
 #### Student Management
+
 ![Student Management](Screenshots/StudentManagement.png)
 
 #### Room Allocation
+
 ![Room Allocation](Screenshots/Roomallocation.png)
 
 #### Complaint Management
+
 ![Complaint Management](Screenshots/Complaint.png)
 
 #### Notice Management
+
 ![Notice Management](Screenshots/Notice.png)
 
 ### Student Module
 
 #### Student Login
+
 ![Student Login](Screenshots/studentlogin.png)
 
 #### Student Dashboard
+
 ![Student Dashboard](Screenshots/studentdashboard.png)
 
 #### Student Profile
+
 ![Student Profile](Screenshots/studentprofile.png)
 
 ## Database
 
-The application uses **MySQL** as the relational database and **JDBC** for database connectivity.
+The application uses MySQL as the relational database and JDBC for database connectivity.
 
 ## How to Run
 
